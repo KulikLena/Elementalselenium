@@ -19,6 +19,7 @@ import java.io.File;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -46,8 +47,9 @@ public class UploadFile {
       File file = new File(filename);
       String path = file.getAbsolutePath();
       driverMozilla.get("http://the-internet.herokuapp.com/upload");
-      driverMozilla.findElement(By.id("file-upload")).sendKeys(path);
-      driverMozilla.findElement(By.id("file-submit")).click();
+      
+      UploadPage page = PageFactory.initElements(driverMozilla, UploadPage.class);
+      page.uploadFile(driverMozilla, path);
       driverMozilla.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
       String text = driverMozilla.findElement(By.id("uploaded-files")).getText();
       assertThat(text, is(equalTo(filename)));
