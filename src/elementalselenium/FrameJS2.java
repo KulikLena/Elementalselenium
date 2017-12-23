@@ -46,19 +46,19 @@ public class FrameJS2 {
 	  String s = driverMozilla.findElement(By.xpath("//body")).getText();
 	  System.out.println(s);
 	  
-	  driverMozilla.get("http://the-internet.herokuapp.com/nested_frames");
+	  driverMozilla.switchTo().defaultContent();
 	  driverMozilla.switchTo().frame("frame-top");
 	  driverMozilla.switchTo().frame("frame-middle");
 	  String k = driverMozilla.findElement(By.xpath("//body")).getText();
 	  System.out.println(k);
 	  
-	  driverMozilla.get("http://the-internet.herokuapp.com/nested_frames");
+	  driverMozilla.switchTo().defaultContent();
 	  driverMozilla.switchTo().frame("frame-top");
 	  driverMozilla.switchTo().frame("frame-right");
 	  String l = driverMozilla.findElement(By.xpath("//body")).getText();
 	  System.out.println(l);
 	  
-	  driverMozilla.get("http://the-internet.herokuapp.com/nested_frames");
+	  driverMozilla.switchTo().defaultContent();
 	  driverMozilla.switchTo().frame("frame-bottom");
 	  String m = driverMozilla.findElement(By.xpath("//body")).getText();
 	  System.out.println(m);
