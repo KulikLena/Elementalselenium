@@ -13,6 +13,7 @@ import org.openqa.selenium.WebDriver;
 
 import java.util.PriorityQueue;
 import java.util.Queue;
+import java.util.Set;
 import java.util.TreeMap;
 
 //import static org.testng.Assert.*;
@@ -62,7 +63,11 @@ public class FrameJS2 {
 	  driverMozilla.switchTo().frame("frame-bottom");
 	  String m = driverMozilla.findElement(By.xpath("//body")).getText();
 	  System.out.println(m);
-	  
+	  Set<String> logTypes = driverMozilla.manage().logs().getAvailableLogTypes();
+	  String [] a = (String[]) logTypes.toArray();
+	  for (int i=0; i<logTypes.size(); i++) {
+		  System.out.println(a[i]);
+	  }
                      
   }
   @AfterClass 

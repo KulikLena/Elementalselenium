@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10879" started-at="2017-12-23T21:34:43Z" finished-at="2017-12-23T21:34:54Z">
+  <suite name="Default suite" duration-ms="15351" started-at="2018-01-03T13:40:16Z" finished-at="2018-01-03T13:40:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10879" started-at="2017-12-23T21:34:43Z" finished-at="2017-12-23T21:34:54Z">
-      <class name="elementalselenium.UploadFile">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:elementalselenium.UploadFile@68c4039c]" name="setUp" is-config="true" duration-ms="4850" started-at="2017-12-23T23:34:43Z" finished-at="2017-12-23T23:34:48Z">
+    <test name="Default test" duration-ms="15351" started-at="2018-01-03T13:40:16Z" finished-at="2018-01-03T13:40:31Z">
+      <class name="elementalselenium.LoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:elementalselenium.LoginTest@65466a6a]" name="setUp" is-config="true" duration-ms="5286" started-at="2018-01-03T15:40:16Z" finished-at="2018-01-03T15:40:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="uploadFile()[pri:0, instance:elementalselenium.UploadFile@68c4039c]" name="uploadFile" duration-ms="4148" started-at="2017-12-23T23:34:48Z" finished-at="2017-12-23T23:34:52Z">
+        <test-method status="PASS" signature="withValidCredentials()[pri:0, instance:elementalselenium.LoginTest@65466a6a]" name="withValidCredentials" duration-ms="5460" started-at="2018-01-03T15:40:21Z" finished-at="2018-01-03T15:40:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- uploadFile -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:elementalselenium.UploadFile@68c4039c]" name="tearDown" is-config="true" duration-ms="1840" started-at="2017-12-23T23:34:52Z" finished-at="2017-12-23T23:34:54Z">
+        </test-method> <!-- withValidCredentials -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:elementalselenium.LoginTest@65466a6a]" name="tearDown" is-config="true" duration-ms="4570" started-at="2018-01-03T15:40:27Z" finished-at="2018-01-03T15:40:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- elementalselenium.UploadFile -->
+      </class> <!-- elementalselenium.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

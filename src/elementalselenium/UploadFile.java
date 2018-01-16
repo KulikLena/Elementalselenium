@@ -8,6 +8,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.By;
@@ -53,6 +55,7 @@ public class UploadFile {
       driverMozilla.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
       String text = driverMozilla.findElement(By.id("uploaded-files")).getText();
       assertThat(text, is(equalTo(filename)));
+      Logger log = LogManager.getLogger("name");
   }
 
   @AfterClass 
